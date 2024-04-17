@@ -18,7 +18,7 @@ app.use(morgan("common"));
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
-
+console.log("hi");
 /* OPEN AI CONFIGURATION */
 const configuration = new Configuration({
   apiKey: process.env.OPEN_API_KEY,
